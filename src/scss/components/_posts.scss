@@ -62,6 +62,25 @@
 //
 // Specific styles for each type of posts
 
+// Photo & Panorama posts
+.photo,
+.panorama {
+  figure {
+    margin: 0;
+
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Photoset posts
+.photoset {
+  .photoset-grid {
+    margin-bottom: 1rem;
+  }
+}
+
 // Quote posts
 .quote {
   .quote-wrapper {
@@ -93,15 +112,15 @@
     margin-bottom: 1rem;
   }
 
-  .tumblr_audio_player {
-    width: 100%;
-  }
+  //.tumblr_audio_player {
+  //  width: 100%;
+  //}
 
   .soundcloud_audio_player {
     width: 100%;
   }
 
-  .spotify_audio_player{
+  .spotify_audio_player {
     /* Height is adjusted with JS */
     width: 100%;
   }
