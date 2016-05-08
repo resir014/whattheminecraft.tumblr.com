@@ -127,17 +127,17 @@
               <h1 class="post-title"><a href="{Permalink}">{Title}</a></h1>
             {/block:Title}
 
-            <ul class="chat">
+            <div class="chat-messages">
               {block:Lines}
-                <li class="{Alt} user_{UserNumber}">
+                <p class="{Alt} user_{UserNumber}">
                   {block:Label}
                     <span class="label">{Label}</span>
                   {/block:Label}
 
                   {Line}
-                </li>
+                </p>
               {/block:Lines}
-            </ul>
+            </div>
           {/block:Chat}
 
           {block:Video}
