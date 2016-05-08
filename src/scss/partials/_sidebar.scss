@@ -1,0 +1,78 @@
+.sidebar {
+  position: relative;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: $base-00;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("https://googledrive.com/host/0B6Vc4fGuZyi8R2s2VjFhVkRaMW8/assets/images/wtm-backgrounds/bg02.png") no-repeat center center;
+    opacity: 0.5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  @media (min-width: 48em) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
+
+.sidebar-about {
+  h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3.25rem;
+  }
+
+  img {
+    display: inline-block;
+    max-height: 3.25rem;
+  }
+}
+
+.sidebar-nav {
+  margin-bottom: 1rem;
+
+  .sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+  }
+  .sidebar-nav-item.active {
+    font-weight: bold;
+  }
+}
+
+.sidebar-footer {
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 85%;
+  }
+}
+
+.sidebar-sticky {
+  @media (min-width: 48em) {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}

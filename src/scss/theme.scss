@@ -1,0 +1,68 @@
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "vendor/normalize";
+@import "vendor/third-party";
+
+@import "base/base";
+@import "base/layout";
+@import "base/typography";
+
+@import "partials/sidebar";
+//@import "partials/header";
+//@import "partials/footer";
+
+@import "components/posts";
+@import "components/notes";
+@import "components/pagination";
+//@import "components/quotes";
+
+//@import "pages/home";
+//@import "pages/about";
+//@import "pages/theme-picker";
+//@import "pages/brand-guidelines";
+//@import "pages/gallery";
+
+/* Tumblr Styles */
+
+header {}
+nav {}
+  ul.pages {}
+  ul.pages li {}
+
+.post {}
+.text {}
+.photo {}
+.photoset {}
+.panorama{}
+.quote {}
+  .short {}
+  .long {}
+  .source {}
+.link {}
+.video {}
+.audio {}
+  .tumblr_audio_player {}
+  .soundcloud_audio_player {}
+  .spotify_audio_player{}
+.chat {}
+  ul.chat {}
+  ul.chat li {}
+    .odd {}
+    .even {}
+.answer {}
+  .asked {}
+  .answered {}
+
+.post figcaption {}
+.source {}
+.description {}
+.label {}
+
+.tags {}
+.post-footer {}
+.post-meta {}
+.attribution {}
+
+.notes {}
+.comments {}

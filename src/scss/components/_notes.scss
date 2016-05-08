@@ -1,0 +1,34 @@
+// Notes
+//
+// Resets Tumblr-generated notes and restyles them.
+
+.post-notes {
+  .notes {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 5px;
+
+      &:nth-child(even) {
+        border: 1px solid $border-color;
+        border-left: none;
+        border-right: none;
+      }
+
+      &:last-child {
+        margin-bottom: 10px;
+        border-bottom: none;
+      }
+    }
+
+    .avatar_frame {
+      display: none;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}

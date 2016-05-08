@@ -1,0 +1,33 @@
+{
+  "name": "whattheminecraft.tumblr.com",
+  "version": "4.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Resi Respati",
+    "email": "resir014@gmail.com",
+    "url": "https://resir014.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/resir014/whattheminecraft.tumblr.com.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-execute": "^0.2.2",
+    "grunt-postcss": "^0.8.0",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "^3.2.0",
+    "tumblr-theme-parser": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

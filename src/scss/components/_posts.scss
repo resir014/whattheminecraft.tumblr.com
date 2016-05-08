@@ -1,0 +1,140 @@
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+.page,
+.post {
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $border-color;
+
+  li + li {
+    margin-top: .25rem;
+  }
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: $base-02;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Post tags
+.post-tags {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .label-tag {
+    margin-right: .5rem;
+    font-size: 85%;
+    color: $base-04;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Post footer
+.post-footer {
+  margin: 0;
+
+  .post-footer-label {
+    margin-right: .5rem;
+    font-size: 85%;
+    color: $base-04;
+    text-decoration: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Post types
+//
+// Specific styles for each type of posts
+
+// Quote posts
+.quote {
+  .quote-wrapper {
+    margin-bottom: 1rem;
+    font-family: $root-font-stack-serif;
+    font-size: 1.5rem;
+    line-height: 1.25;
+
+    .short {
+      font-size: 2rem;
+    }
+
+    .long {
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// Audio posts
+.audio {
+  .audio-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .tumblr_audio_player {
+    width: 100%;
+  }
+
+  .soundcloud_audio_player {
+    width: 100%;
+  }
+
+  .spotify_audio_player{
+    /* Height is adjusted with JS */
+    width: 100%;
+  }
+}
+
+// Answer posts
+.answer {
+  .note-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: $base-06;
+
+    img {
+      margin-left: 10px;
+      padding: 6px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+    .note-item-title {
+      margin: 0;
+      font-size: 85%;
+      vertical-align: baseline;
+    }
+
+    .note-item-content {
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

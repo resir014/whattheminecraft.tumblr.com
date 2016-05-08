@@ -1,0 +1,27 @@
+// Code
+//
+// Inline and block-level code snippets. Includes tweaks to syntax highlighted
+// snippets from Pygments/Rouge and Gist embeds.
+
+code,
+pre {
+  font-family: $code-font-family;
+}
+
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: $code-color;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border-radius: .25rem;
+  overflow-x: auto;
+}
