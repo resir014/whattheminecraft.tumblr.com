@@ -61,13 +61,13 @@
 
           {block:Photo}
             <!-- Photo -->
-            <figure{block:HighRes} class="high-res"{/block:HighRes}>
+            <div class="photo-container{block:HighRes} high-res{/block:HighRes}">
               {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
+            </div>
 
-              {block:Caption}
-                <figcaption>{Caption}</figcaption>
-              {/block:Caption}
-            </figure>
+            {block:Caption}
+              {Caption}
+            {/block:Caption}
           {/block:Photo}
 
           {block:Photoset}
@@ -88,13 +88,13 @@
 
           {block:Panorama}
             <!-- Panorama -->
-            <figure class="panorama-container">
+            <div class="photo-container">
               {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCLoseTag}
+            </div>
 
-              {block:Caption}
-                <figcaption>{Caption}</figcaption>
-              {/block:Caption}
-            </figure>
+            {block:Caption}
+              {Caption}
+            {/block:Caption}
           {/block:Panorama}
 
           {block:Quote}

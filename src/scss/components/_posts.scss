@@ -65,12 +65,8 @@
 // Photo & Panorama posts
 .photo,
 .panorama {
-  figure {
-    margin: 0;
-
-    img {
-      margin-bottom: 1rem;
-    }
+  .photo-container {
+    margin-bottom: 1rem;
   }
 }
 
