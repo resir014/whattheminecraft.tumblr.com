@@ -247,14 +247,26 @@
       {block:Pagination}
         <section class="pagination">
           {block:PreviousPage}
-            <a class="pagination-item newer" href="{PreviousPage}">&#171; Newer</a>
+            <a class="pagination-item newer" href="{PreviousPage}">&#171; Newer Posts</a>
           {/block:PreviousPage}
 
           {block:NextPage}
-            <a class="pagination-item older" href="{NextPage}">Older &#187;</a>
+            <a class="pagination-item older" href="{NextPage}">Older Posts &#187;</a>
           {/block:NextPage}
         </section>
       {/block:Pagination}
+
+      {block:PermalinkPagination}
+        <section class="pagination">
+          {block:NextPost}
+            <a class="pagination-item newer" href="{NextPost}">&#171; Previous Post</a>
+          {/block:NextPost}
+
+          {block:PreviousPost}
+            <a class="pagination-item older" href="{PreviousPost}">Next Post &#187;</a>
+          {/block:PreviousPost}
+        </section>
+      {/block:PermalinkPagination}
 
       <footer role="contentinfo">
         <img src="https://cdn.rawgit.com/resir014/whattheminecraft.tumblr.com/master/dist/images/wtm-logo2.png" alt="WTMinecraft.">
