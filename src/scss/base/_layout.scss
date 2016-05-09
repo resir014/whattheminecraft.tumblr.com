@@ -27,15 +27,21 @@
 }
 
 footer {
-  padding-top: 2rem;
-  margin-top: 3rem;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
   border-top: 1px solid $border-color;
 
   img {
+    display: inline-block;
     height: 1rem;
   }
 
   small {
     display: block;
+  }
+
+  @media (min-width: 48em) {
+    text-align: left;
   }
 }
