@@ -20,6 +20,10 @@
   &:first-child {
     margin-bottom: -1px;
   }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 // Only provide a hover state for linked pagination items
@@ -37,7 +41,8 @@ a.pagination-item:hover {
     border-width: 1px;
 
     // Reset margin-bottom to its default state
-    &:first-child {
+    &:first-child,
+    &:last-child {
       margin-bottom: 0;
     }
 
