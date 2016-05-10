@@ -44,6 +44,18 @@
             <a class="sidebar-nav-item" href="{RSS}">rss</a></li>
           </ul>
         </nav>
+
+        {block:Pagination}
+          <section class="pagination">
+            {block:PreviousPage}
+              <a class="pagination-item" href="{PreviousPage}">&larr;</a>
+            {/block:PreviousPage}
+            <span class="pagination-item">page {CurrentPage} of {TotalPages}</span>
+            {block:NextPage}
+              <a class="pagination-item" href="{NextPage}">&rarr;</a>
+            {/block:NextPage}
+          </section>
+        {/block:Pagination}
       </div>
     </header>
 
@@ -245,26 +257,26 @@
       {/block:Posts}
 
       {block:Pagination}
-        <section class="pagination">
+        <section class="pagination pagination-centered">
           {block:PreviousPage}
-            <a class="pagination-item newer" href="{PreviousPage}">&#171; Newer Posts</a>
+            <a class="pagination-item" href="{PreviousPage}">&larr; newer posts</a>
           {/block:PreviousPage}
-
+          <span class="pagination-item">page {CurrentPage} of {TotalPages}</span>
           {block:NextPage}
-            <a class="pagination-item older" href="{NextPage}">Older Posts &#187;</a>
+            <a class="pagination-item" href="{NextPage}">older posts &rarr;</a>
           {/block:NextPage}
         </section>
       {/block:Pagination}
 
       {block:PermalinkPagination}
-        <section class="pagination">
-          {block:NextPost}
-            <a class="pagination-item newer" href="{NextPost}">&#171; Previous Post</a>
-          {/block:NextPost}
-
+        <section class="pagination pagination-centered">
           {block:PreviousPost}
-            <a class="pagination-item older" href="{PreviousPost}">Next Post &#187;</a>
+            <a class="pagination-item" href="{PreviousPost}">&larr; previous post</a>
           {/block:PreviousPost}
+
+          {block:NextPost}
+            <a class="pagination-item" href="{NextPost}">next post &rarr;</a>
+          {/block:NextPost}
         </section>
       {/block:PermalinkPagination}
 
